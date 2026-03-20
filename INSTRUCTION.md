@@ -7,7 +7,7 @@ This is a short instruction for Docker Image of this project
 To build Image for this project run command in terminal form project directory:
 
 ```bash
-docker build --build-arg PYTHON_VERSION=3.13  -t image-name:tag .
+docker build --build-arg PYTHON_VERSION=3.13 -t todoapp:1.0.0 .
 ```
 
 For changing needed Python version change ```PYTHON_VERSION``` parameter
@@ -21,7 +21,7 @@ Easy access to Dockerfile from [DockerHub](https://hub.docker.com/repository/doc
 You can easily create container from this link following this command:
 
 ```bash
-docker run -p 8080:8080 killingrace/todoapp
+docker run -p 8080:8080 killingrace/todoapp:1.0.0
 ```
 
 - To bind container port on another by changing ```-p [your port]:8080```
