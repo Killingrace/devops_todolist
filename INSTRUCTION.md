@@ -7,7 +7,7 @@ This is a short instruction for Docker Image of this project
 To build Image for this project run command in terminal form project directory:
 
 ```bash
-docker build --build-args PYTHON_VERSION=3.13  -t image-name:tag .
+docker build --build-arg PYTHON_VERSION=3.13  -t image-name:tag .
 ```
 
 For changing needed Python version change ```PYTHON_VERSION``` parameter
