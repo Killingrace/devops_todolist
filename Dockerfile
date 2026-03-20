@@ -24,6 +24,8 @@ COPY . .
 
 RUN python manage.py migrate
 
+ENV PYTHONUNBUFFERED=1 
+
 EXPOSE 8080
 
 ENTRYPOINT [ "python", "manage.py", "runserver", "0.0.0.0:8080"]

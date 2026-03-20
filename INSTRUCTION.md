@@ -2,6 +2,16 @@
 
 This is a short instruction for Docker Image of this project
 
+## Building Image
+
+To build Image for this project run command in terminal form project directory:
+
+```bash
+docker build --build-args PYTHON_VERSION=3.13  -t image-name:tag .
+```
+
+For changing needed Python version change ```PYTHON_VERSION``` parameter
+
 ## DockerHub
 
 Easy access to Dockerfile from [DockerHub](https://hub.docker.com/repository/docker/killingrace/todoapp/general)
@@ -21,5 +31,5 @@ docker run -p 8080:8080 killingrace/todoapp
 
 To access application just follow the links:
 
-1. [API](http://localhost:8000/api/)
-2. [Landing Page](http://localhost:8000)
+1. [API](http://localhost:8080/api/)
+2. [Landing Page](http://localhost:8080)
